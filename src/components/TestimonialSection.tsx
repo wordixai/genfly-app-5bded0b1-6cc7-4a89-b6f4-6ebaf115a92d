@@ -1,0 +1,35 @@
+export default function TestimonialSection() {
+  return (
+    <section className="relative z-10 py-8 md:py-16">
+      <div className="absolute left-1/2 top-0 -z-10 w-full -translate-x-1/2 h-[200px] md:h-[400px] rounded-[100%] bg-red-600 opacity-10 blur-[60px] md:blur-[90px] pointer-events-none"></div>
+      
+      <div className="mx-auto max-w-screen-xl px-6 md:px-10">
+        <div className="mt-16 grid grid-cols-3 gap-2 rounded-2xl text-black md:mt-24 md:grid-cols-6 md:gap-6 dark:text-white">
+          <div className="group flex flex-col overflow-hidden px-4 rounded-2xl md:rounded-4xl dark:bg-gray-800 dark:hover:bg-white col-span-3 bg-white py-8 shadow-sm transition-colors sm:px-16 sm:py-10">
+            <span className="flex h-10 items-center justify-center text-gray-700 transition-colors group-hover:text-red-600 group-hover:opacity-100 dark:text-white dark:opacity-80">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 46 24" height="27">
+                <path fillRule="evenodd" clipRule="evenodd" d="M11 2H14V13.9332L14.0003 13.9731L14.0003 14C14.0003 14.0223 14.0002 14.0445 14 14.0668V21H11V19.7455C9.86619 20.5362 8.48733 21 7.00016 21C3.13408 21 0 17.866 0 14C0 10.134 3.13408 7 7.00016 7C8.48733 7 9.86619 7.46375 11 8.25452V2ZM7 17.9998C9.20914 17.9998 11 16.209 11 13.9999C11 11.7908 9.20914 10 7 10C4.79086 10 3 11.7908 3 13.9999C3 16.209 4.79086 17.9998 7 17.9998ZM32 2H35V8.25474C36.1339 7.46383 37.5128 7 39.0002 7C42.8662 7 46.0003 10.134 46.0003 14C46.0003 17.866 42.8662 21 39.0002 21C35.1341 21 32 17.866 32 14V2ZM39 17.9998C41.2091 17.9998 43 16.209 43 13.9999C43 11.7908 41.2091 10 39 10C36.7909 10 35 11.7908 35 13.9999C35 16.209 36.7909 17.9998 39 17.9998ZM19 7H16V14C16 14.9192 16.1811 15.8295 16.5329 16.6788C16.8846 17.5281 17.4003 18.2997 18.0503 18.9497C18.7003 19.5997 19.472 20.1154 20.3213 20.4671C21.1706 20.8189 22.0809 21 23.0002 21C23.9194 21 24.8297 20.8189 25.679 20.4671C26.5283 20.1154 27.3 19.5997 27.95 18.9497C28.6 18.2997 29.1157 17.5281 29.4675 16.6788C29.8192 15.8295 30.0003 14.9192 30.0003 14H30V7H27V14C27 15.0608 26.5785 16.0782 25.8284 16.8283C25.0783 17.5784 24.0609 17.9998 23 17.9998C21.9391 17.9998 20.9217 17.5784 20.1716 16.8283C19.4215 16.0782 19 15.0608 19 14V7Z" fill="currentColor"></path>
+              </svg>
+            </span>
+            <p className="mt-4 grow md:text-xl text-gray-600 dark:text-text transition-colors dark:group-hover:text-gray-800">
+              "The Upstash JS SDK is incredibly easy to use – all I needed to do was run npm install, initialize the Redis instance, and start running redis commands – super simple!"
+            </p>
+          </div>
+          
+          <div className="group flex flex-col overflow-hidden px-4 rounded-2xl md:rounded-4xl dark:bg-gray-800 dark:hover:bg-white col-span-3 bg-white py-8 shadow-sm transition-colors sm:px-16 sm:py-10">
+            <span className="flex h-10 items-center justify-center text-gray-700 transition-colors group-hover:text-red-600 group-hover:opacity-100 dark:text-white dark:opacity-80">
+              <svg viewBox="0 0 105 28" fill="currentColor" xmlns="http://www.w3.org/2000/svg" height="24">
+                <g clipPath="url(#clip0_11_69)">
+                  <path d="M25.0038 19.1865L24.9893 19.1404L34.1765 10.7297V6.67719H19.4372V10.7297H28.241L28.2555 10.7685L19.1581 19.1865V23.2389H34.3245V19.1865H25.0038Z" fill="currentColor"></path>
+                </g>
+              </svg>
+            </span>
+            <p className="mt-4 grow md:text-xl text-gray-600 dark:text-text transition-colors dark:group-hover:text-gray-800">
+              "We chose Upstash specifically because it offers an HTTP interface for Redis, which perfectly suited our needs"
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
