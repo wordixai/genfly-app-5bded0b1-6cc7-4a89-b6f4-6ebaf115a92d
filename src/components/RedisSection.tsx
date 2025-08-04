@@ -40,13 +40,13 @@ export default function RedisSection() {
   return (
     <div className="-mx-6 p-6 sm:mx-auto sm:p-8 bg-white shadow sm:rounded-4xl dark:bg-white/10">
       <div className="mb-8 flex flex-col items-center gap-4 py-4">
-        <h2 className="text-2xl font-medium text-emerald-800 dark:text-text">
+        <h2 className="text-2xl font-medium text-emerald-800 dark:text-gray-900">
           Low-latency, serverless key-value store
         </h2>
         <div className="xs:flex-row flex flex-col justify-center gap-3">
           <Button 
             variant="secondary" 
-            className="bg-emerald-800/20 dark:bg-bg-mute dark:hover:bg-emerald-800/30 text-emerald-800 hover:bg-emerald-800/30 h-[42px] px-5"
+            className="bg-emerald-800/20 dark:bg-gray-200 dark:hover:bg-emerald-800/30 text-emerald-800 hover:bg-emerald-800/30 h-[42px] px-5"
           >
             Documentation
             <FileText className="ml-2 h-5 w-5" />
@@ -60,7 +60,7 @@ export default function RedisSection() {
 
       <div className="grid gap-2 sm:grid-cols-3 sm:place-items-center sm:gap-8">
         {features.map((feature, index) => (
-          <article key={index} className="flex flex-col gap-4 rounded-2xl p-6 text-left sm:h-full sm:p-8 bg-gray-100 dark:bg-bg">
+          <article key={index} className="flex flex-col gap-4 rounded-2xl p-6 text-left sm:h-full sm:p-8 bg-gray-100 dark:bg-gray-800">
             <h4 className="font-display text-lg font-semibold leading-tight sm:text-2xl">
               {feature.title.split(', ').map((part, i) => (
                 <span key={i}>
@@ -120,7 +120,7 @@ export default function RedisSection() {
               </button>
             </div>
             <div className="h-[278px] min-h-0 w-full border-0 border-white/10 px-[6px] py-6 md:border-l-2">
-              <pre className="h-full overflow-x-scroll overflow-y-scroll text-[.86em] text-white">
+              <pre className="h-full overflow-x-scroll overflow-y-scroll text-[.86em] text-white bg-gray-900 p-4 rounded">
                 <code>
 {`import { Redis } from "@upstash/redis";
 const redis = Redis.fromEnv();
