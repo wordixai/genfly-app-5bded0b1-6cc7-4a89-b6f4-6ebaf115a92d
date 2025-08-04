@@ -1,5 +1,5 @@
 import { Button } from '@/components/ui/button';
-import { FileText, Plus, CircleNumber1, CircleNumber2, CircleNumber3 } from 'lucide-react';
+import { FileText, Plus } from 'lucide-react';
 
 const features = [
   {
@@ -35,6 +35,16 @@ const examples = [
   { name: "Leaderboards", active: false },
   { name: "Chat", active: false }
 ];
+
+// Custom numbered circle icons
+const NumberedIcon = ({ number }: { number: number }) => (
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="h-6 w-6">
+    <circle cx="12" cy="12" r="9"></circle>
+    <text x="12" y="16" textAnchor="middle" fontSize="10" fill="currentColor" strokeWidth="0">
+      {number}
+    </text>
+  </svg>
+);
 
 export default function RedisSection() {
   return (
@@ -74,9 +84,7 @@ export default function RedisSection() {
               {feature.items.map((item, itemIndex) => (
                 <li key={itemIndex} className="flex items-start gap-2 py-px sm:py-1">
                   <span className="shrink-0 text-red-600">
-                    {itemIndex === 0 && <CircleNumber1 className="h-6 w-6" strokeWidth="1.5" />}
-                    {itemIndex === 1 && <CircleNumber2 className="h-6 w-6" strokeWidth="1.5" />}
-                    {itemIndex === 2 && <CircleNumber3 className="h-6 w-6" strokeWidth="1.5" />}
+                    <NumberedIcon number={itemIndex + 1} />
                   </span>
                   {item}
                 </li>
@@ -103,7 +111,7 @@ export default function RedisSection() {
                   <span className="truncate">{example.name}</span>
                   {example.active && (
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-black/50">
-                      <path d="M9 6l6 6l-6 6"></path>
+                      <path d="m9 18 6-6-6-6"></path>
                     </svg>
                   )}
                 </button>
