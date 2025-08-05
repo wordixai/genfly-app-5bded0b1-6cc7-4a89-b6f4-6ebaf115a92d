@@ -16,9 +16,9 @@ export default function LogoCloud() {
       {logos.map((logo, index) => (
         <div
           key={index}
-          className="group flex h-[72px] w-[180px] flex-col items-center justify-center rounded-2xl bg-gray-100 transition-colors hover:text-red-600 md:rounded-4xl dark:bg-gray-800 dark:hover:bg-white"
+          className="group flex h-[72px] w-[180px] flex-col items-center justify-center rounded-2xl bg-gray-100 transition-colors hover:text-upstash-green md:rounded-4xl dark:bg-gray-800 dark:hover:bg-white"
         >
-          <div className={`text-gray-600 group-hover:text-red-600 transition-colors`}>
+          <div className={`text-gray-600 group-hover:text-upstash-green transition-colors`}>
             {logo.name}
           </div>
         </div>

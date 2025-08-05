@@ -61,7 +61,7 @@ export default function RedisSection() {
             Documentation
             <FileText className="ml-2 h-5 w-5" />
           </Button>
-          <Button className="bg-red-600 hover:bg-red-700 text-white h-[42px] px-5">
+          <Button className="bg-upstash-green hover:bg-upstash-dark-green text-white h-[42px] px-5">
             Create Database
             <Plus className="ml-2 h-5 w-5" />
           </Button>
@@ -83,7 +83,7 @@ export default function RedisSection() {
             <ul className="">
               {feature.items.map((item, itemIndex) => (
                 <li key={itemIndex} className="flex items-start gap-2 py-px sm:py-1">
-                  <span className="shrink-0 text-red-600">
+                  <span className="shrink-0 text-upstash-green">
                     <NumberedIcon number={itemIndex + 1} />
                   </span>
                   {item}
@@ -120,7 +120,7 @@ export default function RedisSection() {
           </div>
           <div className="min-w-0 flex-grow">
             <div className="flex h-10 border-0 border-l-2 border-zinc-700 bg-zinc-800 px-1 pt-2">
-              <button className="flex h-full items-center px-5 text-[13px] border-t-2 border-emerald-500 bg-black text-white">
+              <button className="flex h-full items-center px-5 text-[13px] border-t-2 border-upstash-green bg-black text-white">
                 TypeScript
               </button>
               <button className="flex h-full items-center px-5 text-[13px] border-t-2 border-transparent text-white/60">

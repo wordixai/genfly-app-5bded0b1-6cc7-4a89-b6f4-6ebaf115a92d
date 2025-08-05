@@ -25,8 +25,9 @@ export default {
 				background: 'hsl(var(--background))',
 				foreground: 'hsl(var(--foreground))',
 				primary: {
-					DEFAULT: 'hsl(var(--primary))',
-					foreground: 'hsl(var(--primary-foreground))'
+					DEFAULT: '#00E5A5', // Upstash green
+					foreground: 'hsl(var(--primary-foreground))',
+					text: '#00E5A5' // Upstash green for text
 				},
 				secondary: {
 					DEFAULT: 'hsl(var(--secondary))',
@@ -62,7 +63,16 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				// Custom colors for Upstash theme
+				// Custom Upstash colors
+				'upstash': {
+					'green': '#00E5A5',
+					'dark-green': '#00B386',
+					'red': '#DC2626',
+					'orange': '#F97316',
+					'blue': '#2563EB',
+					'purple': '#9333EA',
+					'yellow': '#EAB308'
+				},
 				'bg': {
 					DEFAULT: '#f9fafb',
 					'mute': '#f3f4f6'

@@ -8,7 +8,7 @@ export default function Header() {
         <div className="flex h-[70px] md:h-[80px] items-center justify-between">
           {/* Logo */}
           <div className="flex items-center gap-2">
-            <div className="w-8 h-8 bg-red-600 rounded-lg flex items-center justify-center">
+            <div className="w-8 h-8 bg-upstash-green rounded-lg flex items-center justify-center">
               <span className="text-white font-bold text-lg">U</span>
             </div>
             <span className="text-xl font-bold text-gray-900">upstash</span>
@@ -27,7 +27,7 @@ export default function Header() {
             <Button variant="ghost" className="hidden md:inline-flex">
               Login
             </Button>
-            <Button className="bg-red-600 hover:bg-red-700 text-white">
+            <Button className="bg-upstash-green hover:bg-upstash-dark-green text-white">
               Start for Free
             </Button>
             <Button variant="ghost" size="icon" className="md:hidden">
